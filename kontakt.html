@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content"
+    />
+    <title>Anfrage stellen – Klar Glas, Berlin-Köpenick</title>
+    <meta
+      name="description"
+      content="Anfrage an Klar Glas: Fensterreinigung, Terrassentüren und Felgen in Berlin-Köpenick. 4 € pro Fenster, Bestätigung in 15 Minuten. Heute schreiben, morgen da."
+    />
+    <meta name="theme-color" content="#fffefc" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="figtree-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+    <header class="masthead">
+      <nav class="masthead__nav" aria-label="Hauptnavigation">
+        <button class="menu-toggle" type="button" data-menu-open aria-expanded="false" aria-controls="menu">
+          <span class="menu-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+          Menü
+        </button>
+        <div class="navlinks">
+          <a href="index.html#leistungen">Leistungen</a>
+          <a href="index.html#preise">Preise</a>
+          <a href="index.html#ueber-uns">Über uns</a>
+          <a href="index.html#gebiet">Gebiet</a>
+        </div>
+      </nav>
+
+      <a class="masthead__brand" href="index.html" aria-label="Klar Glas – Startseite">
+        <svg class="brandmark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="2.5" y="2.5" width="27" height="27" rx="4" fill="none" stroke="#010F2B" stroke-width="2.4" />
+          <path d="M16 3v26M3 16h26" stroke="#010F2B" stroke-width="2.4" />
+          <path class="brandmark__swipe" d="M6.5 25.5 25.5 6.5" stroke="#2B5CFF" stroke-width="3.2" stroke-linecap="round" />
+          <circle cx="9.6" cy="9.6" r="2.1" fill="#010F2B" />
+        </svg>
+        <span class="wordmark" translate="no"><b>Klar</b>Glas</span>
+      </a>
+
+      <a class="btn btn--primary masthead__cta" href="tel:+4915906602809">Anrufen</a>
+    </header>
+
+    <nav class="menu" id="menu" data-menu data-lenis-prevent role="dialog" aria-modal="true" aria-label="Menü">
+      <button class="menu-close" type="button" data-menu-close>Schließen</button>
+      <a href="index.html#leistungen">Leistungen</a>
+      <a href="index.html#preise">Preise</a>
+      <a href="index.html#ueber-uns">Über uns</a>
+      <a href="index.html#ablauf">Ablauf</a>
+      <a href="index.html#gebiet">Gebiet</a>
+      <a class="menu__cta" href="kontakt.html">Anfrage stellen</a>
+      <div class="menu__foot">
+        <a href="tel:+4915906602809">0159&nbsp;0660&nbsp;2809</a>
+        <a href="mailto:info@klarglas-berlin.de">info@klarglas-berlin.de</a>
+      </div>
+    </nav>
+
+    <main id="main">
+      <section class="pagehead">
+        <div class="shell">
+          <div class="section-head">
+            <span class="tag">Anfrage</span>
+            <h1>Sagen Sie uns, worum es geht</h1>
+            <p class="lede">
+              Heute schreiben, morgen da. Fenster zählen, Termin wählen, absenden:
+              Die Bestätigung mit festem Preis kommt in etwa 15&nbsp;Minuten.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="slab slab--white" aria-label="Anfrageformular">
+        <div class="shell contact">
+          <form
+            class="form"
+            data-form
+            action="https://formsubmit.co/info@klarglas-berlin.de"
+            method="post"
+          >
+            <input type="hidden" name="_subject" value="Neue Anfrage über die Website" />
+            <input type="hidden" name="_template" value="table" />
+            <input class="form__honey" type="text" name="_honey" tabindex="-1" autocomplete="off" aria-hidden="true" />
+            <div class="form__row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" required />
+                <span class="field__error">Bitte tragen Sie Ihren Namen ein.</span>
+              </div>
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" spellcheck="false" required />
+                <span class="field__error">Bitte prüfen Sie Ihre E-Mail-Adresse.</span>
+              </div>
+            </div>
+
+            <div class="form__row">
+              <div class="field">
+                <label for="telefon">Telefon <span class="field__hint">(optional)</span></label>
+                <input id="telefon" name="telefon" type="tel" inputmode="tel" autocomplete="tel" />
+              </div>
+              <div class="field">
+                <label for="adresse">Straße und Hausnummer</label>
+                <input id="adresse" name="adresse" type="text" autocomplete="street-address" required />
+                <span class="field__error">Ohne Adresse wissen wir nicht, ob wir zu Ihnen kommen.</span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="leistung">Worum geht es?</label>
+              <select id="leistung" name="leistung" required>
+                <option value="">Bitte auswählen</option>
+                <option>Fensterreinigung</option>
+                <option>Felgenreinigung</option>
+                <option>Nachbarschaftshilfe</option>
+                <option>Mehreres zusammen</option>
+              </select>
+              <span class="field__error">Bitte wählen Sie eine Leistung aus.</span>
+            </div>
+
+            <fieldset class="group counter" data-fenster>
+              <legend class="group__legend">Wie viele Fenster? <span class="field__hint">(optional)</span></legend>
+              <p class="counter__aus" data-fenster-aus>Nur bei Fensterreinigung nötig.</p>
+              <div class="counter__body">
+                <div class="counter__rows">
+                  <div class="stepper" data-stepper data-preis="4">
+                    <label class="stepper__label" for="fenster-normal">
+                      Normale Fenster <span class="stepper__price">4&nbsp;€</span>
+                    </label>
+                    <div class="stepper__controls">
+                      <button class="stepper__btn" type="button" data-schritt="-1" aria-label="Ein normales Fenster weniger">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /></svg>
+                      </button>
+                      <input class="stepper__input" id="fenster-normal" name="fenster_normal" type="number" inputmode="numeric" min="0" max="99" value="0" />
+                      <button class="stepper__btn" type="button" data-schritt="1" aria-label="Ein normales Fenster mehr">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4v12" /></svg>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="stepper" data-stepper data-preis="5">
+                    <label class="stepper__label" for="fenster-boden">
+                      Bodentiefe Fenster / Terrassentüren <span class="stepper__price">5&nbsp;€</span>
+                    </label>
+                    <div class="stepper__controls">
+                      <button class="stepper__btn" type="button" data-schritt="-1" aria-label="Ein bodentiefes Fenster weniger">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /></svg>
+                      </button>
+                      <input class="stepper__input" id="fenster-boden" name="fenster_bodentief" type="number" inputmode="numeric" min="0" max="99" value="0" />
+                      <button class="stepper__btn" type="button" data-schritt="1" aria-label="Ein bodentiefes Fenster mehr">
+                        <svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M10 4v12" /></svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="estimate" data-schaetzung>
+                  <div aria-live="polite">
+                    <p class="estimate__empty" data-schaetzung-leer>Tippen Sie auf +, dann rechnen wir mit.</p>
+                    <p class="estimate__sum" data-schaetzung-summe hidden>
+                      <span class="estimate__label">Ungefähr</span>
+                      <span class="estimate__value"><span data-schaetzung-wert>0</span>&nbsp;€</span>
+                    </p>
+                    <p class="estimate__warn" id="mindest-hinweis" data-mindest hidden>
+                      Der Mindestauftrag liegt bei 15&nbsp;€. Nehmen Sie noch ein Fenster dazu.
+                    </p>
+                  </div>
+                  <p class="estimate__note">
+                    Hier bezahlen Sie nichts. Das ist nur eine Schätzung, den festen Preis
+                    bestätigen wir per E-Mail.
+                  </p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="group when" data-termin>
+              <legend class="group__legend">Wunschtermin <span class="field__hint">(optional)</span></legend>
+              <input type="hidden" name="termin" data-termin-wert />
+              <input type="hidden" name="uhrzeit" data-uhrzeit-wert />
+
+              <div class="when__days" data-tage role="radiogroup" aria-label="Tag"></div>
+              <div class="when__other" data-anderes>
+                <label class="when__other-label" for="termin-anders">Datum wählen</label>
+                <input class="when__date" id="termin-anders" name="termin_datum" type="date" data-anderes-datum />
+              </div>
+
+              <div class="sunarc" data-sonnenbogen>
+                <p class="sunarc__readout" data-zeit-anzeige aria-hidden="true">
+                  Ziehen Sie die Sonne auf Ihre Wunschzeit.
+                </p>
+                <div class="sunarc__track" data-bogen>
+                  <svg class="sunarc__sky" viewBox="0 0 400 120" preserveAspectRatio="none" aria-hidden="true">
+                    <defs>
+                      <linearGradient id="himmel" x1="0" x2="1" y1="0" y2="0">
+                        <stop offset="0" stop-color="#ffd27a" />
+                        <stop offset="0.5" stop-color="#9db6ff" />
+                        <stop offset="1" stop-color="#2b5cff" />
+                      </linearGradient>
+                    </defs>
+                    <path d="M8 112 Q200 -40 392 112" fill="none" stroke="url(#himmel)" stroke-width="4" stroke-linecap="round" stroke-dasharray="2 10" />
+                    <path d="M0 116 H400" stroke="#010f2b" stroke-opacity="0.14" stroke-width="2" />
+                  </svg>
+                  <input class="sunarc__range" id="uhrzeit-regler" type="range" min="540" max="1200" step="30" value="900" aria-label="Uhrzeit" data-regler />
+                  <span class="sunarc__sun" data-sonne aria-hidden="true"></span>
+                </div>
+                <div class="sunarc__scale" aria-hidden="true"><span data-skala-start>9 Uhr</span><span>20 Uhr</span></div>
+                <label class="toggle">
+                  <input type="checkbox" data-zeit-egal />
+                  <span class="toggle__track" aria-hidden="true"></span>
+                  Uhrzeit ist mir egal
+                </label>
+              </div>
+
+              <p class="when__caption" aria-hidden="true">Uhrzeit</p>
+              <div class="when__times" data-zeiten role="radiogroup" aria-label="Uhrzeit"></div>
+            </fieldset>
+
+            <div class="field">
+              <label for="nachricht">Nachricht <span class="field__hint">(optional)</span></label>
+              <textarea
+                id="nachricht"
+                name="nachricht"
+                placeholder="Zum Beispiel: Fenster im 1. Stock, Klingel bei Müller, der Hund ist lieb …"
+              ></textarea>
+            </div>
+
+            <p class="form__legal">
+              Mit dem Absenden stimmen Sie zu, dass wir Ihre Angaben zur Bearbeitung der
+              Anfrage verwenden. Details in der
+              <a href="datenschutz.html">Datenschutzerklärung</a>.
+            </p>
+
+            <button class="btn btn--primary btn--wide" type="submit">Anfrage senden</button>
+
+            <p class="form__status" data-form-status role="status"></p>
+          </form>
+
+          <aside class="aside" aria-labelledby="direkt">
+            <div class="aside__media">
+              <img
+                src="schwamm-900.webp"
+                srcset="schwamm-600.webp 600w, schwamm-900.webp 900w, schwamm-1200.webp 1200w"
+                sizes="(min-width: 900px) 28vw, 92vw"
+                width="1200"
+                height="800"
+                loading="lazy"
+                decoding="async"
+                alt="Gelber Schwamm auf einer eingeseiften Glasfläche."
+              />
+            </div>
+            <div>
+              <h2 id="direkt">Direkter Draht</h2>
+              <div class="directlist">
+                <a href="tel:+4915906602809">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <path
+                      d="M6.5 3h3l1.5 4-2 1.5a12 12 0 0 0 6.5 6.5L17 13l4 1.5v3a2.5 2.5 0 0 1-2.7 2.5C10.9 19.5 4.5 13.1 4 5.7A2.5 2.5 0 0 1 6.5 3Z"
+                      stroke="currentColor"
+                      stroke-width="1.8"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  0159&nbsp;0660&nbsp;2809
+                </a>
+                <a href="mailto:info@klarglas-berlin.de">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="3" stroke="currentColor" stroke-width="1.8" />
+                    <path d="m4 8 8 5 8-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+                  </svg>
+                  info@klarglas-berlin.de
+                </a>
+              </div>
+              <p class="lede" style="margin-top: 0.75rem">
+                Wir sind Louis und Lukas aus dem Märchenviertel. Auch wenn wir gerade in der
+                Schule oder auf der Leiter stehen: Ihre Anfrage bestätigen wir in etwa
+                15&nbsp;Minuten.
+              </p>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="shell">
+        <div class="footer__top">
+          <div class="footer__brand">
+            <a class="footer__logo" href="index.html" aria-label="Klar Glas – Startseite">
+              <svg class="brandmark" viewBox="0 0 32 32" aria-hidden="true">
+                <rect x="2.5" y="2.5" width="27" height="27" rx="4" fill="none" stroke="#FFFEFC" stroke-width="2.4" />
+                <path d="M16 3v26M3 16h26" stroke="#FFFEFC" stroke-width="2.4" />
+                <path d="M6.5 25.5 25.5 6.5" stroke="#9DB6FF" stroke-width="3.2" stroke-linecap="round" />
+                <circle cx="9.6" cy="9.6" r="2.1" fill="#FFFEFC" />
+              </svg>
+              <span class="wordmark" translate="no"><b>Klar</b>Glas</span>
+            </a>
+            <p class="footer__claim">Wir sorgen für den Durchblick.</p>
+            <p class="footer__tagline">Heute schreiben, morgen da.</p>
+          </div>
+          <div class="footer__cols">
+            <div class="footer__col">
+              <h2>Leistungen</h2>
+              <ul>
+                <li><a href="index.html#leistungen">Fensterreinigung</a></li>
+                <li><a href="index.html#leistungen">Terrassentüren</a></li>
+                <li><a href="index.html#leistungen">Felgenreinigung</a></li>
+                <li><a href="index.html#leistungen">Nachbarschaftshilfe</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2>Kontakt</h2>
+              <ul>
+                <li><a href="tel:+4915906602809">0159&nbsp;0660&nbsp;2809</a></li>
+                <li><a href="mailto:info@klarglas-berlin.de">info@klarglas-berlin.de</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h2>Rechtliches</h2>
+              <ul>
+                <li><a href="impressum.html">Impressum</a></li>
+                <li><a href="datenschutz.html">Datenschutz</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>© 2026 Klar Glas · Louis Horlbeck &amp; Lukas Dahlhaus</span>
+          <span>Berlin-Köpenick, Märchenviertel</span>
+        </div>
+      </div>
+    </footer>
+
+    <div class="actionbar">
+      <a class="btn btn--ghost" href="tel:+4915906602809">Anrufen</a>
+      <a class="btn btn--primary" href="#main">Formular</a>
+    </div>
+
+    <script src="main.js" defer></script>
+  </body>
+</html>
